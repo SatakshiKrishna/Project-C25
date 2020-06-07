@@ -7,7 +7,7 @@ class Box {
     this.width = width;
     this.height = height;
 
-    this.image = loadImage("sprites/Dustbin.png");
+    this.image = loadImage("Dustbin.png");
     
     World.add(world, this.body);
   }
@@ -18,7 +18,6 @@ class Box {
     translate(pos.x, pos.y);
     rotate(angle);
     imageMode(CENTER);
-    fill(206,177,33);
     image(this.image,0,0, this.width, this.height);
     pop();
   }

@@ -9,7 +9,7 @@ class Ball {
     this.body = Bodies.circle(x, y,r, options);
     this.radius = r;
    
-    this.image = loadImage("sprites/Paper.png");
+    this.image = loadImage("SPaper.png");
 
     World.add(world, this.body);
   }
@@ -20,7 +20,7 @@ class Ball {
     translate(pos.x, pos.y);
    
     imageMode(CENTER);
-    fill(206,177,33);
+    
     image(this.image,0,0, this.radius);
     pop();
   }
